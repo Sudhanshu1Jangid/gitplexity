@@ -7,12 +7,6 @@ from src.LLM import LLM
 from src.utils import clone
 import os
 
-st.set_page_config("GitPlexity", 
-                   page_icon='assets/favicon.png',
-                   layout="wide")
-
-st.image('assets/logo.png', width=250)
-
 @st.dialog("Input you link")
 def getLink():
     repoUrl = st.text_input("GitHub Repository URL")
